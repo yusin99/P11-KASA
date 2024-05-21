@@ -6,6 +6,7 @@ import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 
 import './utils/style/styles.css';
+import { Lodging } from './pages/Lodging/lodging';
 
 // Render the app in the root element
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Header />
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/lodging/:id' element={<Lodging />} />
         </Routes>
         <Footer />
     </Router>
