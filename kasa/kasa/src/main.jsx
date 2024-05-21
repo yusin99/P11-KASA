@@ -7,6 +7,7 @@ import { Footer } from './components/Footer/Footer';
 
 import './utils/style/styles.css';
 import { Lodging } from './pages/Lodging/lodging';
+import { About } from './pages/About/about';
 
 // Render the app in the root element
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/lodging/:id' element={<Lodging />} />
+          <Route path='/about' element={<About />} />
         </Routes>
         <Footer />
     </Router>
