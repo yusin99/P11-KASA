@@ -30,7 +30,7 @@
 }
 
 .location {
-  color: var(--primary-color);
+  color: black;
   font-size: 14px;
   margin-top: -7px;
   font-weight: 500;

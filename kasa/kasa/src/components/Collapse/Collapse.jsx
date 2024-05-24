@@ -21,9 +21,9 @@ export const Collapsible = ({ title, content, customStyle }) => {
         {title}
         {/* Display up or down arrow based on the state of 'open' */}
         {open ? (
-          <img src={up_arrow} alt='up_arrow' className={styles.arrow} />
-        ) : (
           <img src={down_arrow} alt='down_arrow' className={styles.arrow} />
+        ) : (
+          <img src={up_arrow} alt='up_arrow' className={styles.arrow} />
         )}
       </button>
       {/* Content of the collapse */}

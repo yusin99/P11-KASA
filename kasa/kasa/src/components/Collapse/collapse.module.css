@@ -73,7 +73,7 @@
   height: auto;
   overflow: hidden;
   min-height: 140px;
-  color: var(--primary-color);
+  color: black;
   background-color: var(--tertiary-color);
   border-radius: 5px;
 }
@@ -89,7 +89,7 @@
   height: auto;
   overflow: hidden;
   min-height: 140px;
-  color: var(--primary-color);
+  color: black;
   background-color: var(--tertiary-color);
   border-radius: 5px;
 }
