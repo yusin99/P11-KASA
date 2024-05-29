@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
 import styles from './card.module.css';
+import CardPropTypes from '../../proptypes/CardPropTypes';
 
 // The Card component displays an image and a title.
 // It takes a title and an image URL as input via the props.
@@ -14,7 +14,4 @@ export function Card({ title, picture }) {
 }
 
 // PropTypes for type checking
-Card.propTypes = {
-  title: PropTypes.string.isRequired,
-  picture: PropTypes.string.isRequired,
-};
+Card.propTypes = CardPropTypes
