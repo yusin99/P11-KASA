@@ -5,6 +5,9 @@
   padding: 5%;
   padding-bottom: 18px;
 }
+.activeLink {
+  text-decoration: underline !important;
+}
 @media only screen and (min-width: 1240px) {
   .header {
     max-width: 1240px;

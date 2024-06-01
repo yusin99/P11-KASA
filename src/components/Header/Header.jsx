@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './header.module.css';
 
 import vector_K from '../../assets/vector_K.png';
@@ -10,20 +10,20 @@ export function Header() {
   return (
     <header className={styles.header}>
       {/* Display the Kasa logo and link it to the home page */}
-      <Link to={'/'} className={styles.logo}>
+      <NavLink to={'/'} className={styles.logo}>
         <img src={vector_K} alt='K' />
         <img className={styles.house} src={vector_A_house} alt='A' />
         <img src={vector_S} alt='S' />
         <img src={vector_A} alt='A' />
-      </Link>
+      </NavLink>
       {/* Navigation links */}
       <nav>
         <ul className={styles.list}>
           <li>
-            <Link to={'/'}>Accueil</Link>
+            <NavLink to={'/'} className={({ isActive }) => (isActive ? styles.activeLink : undefined)}>Accueil</NavLink>
           </li>
           <li>
-            <Link to={'/about'}>A Propos</Link>
+            <NavLink to={'/about'} className={({ isActive }) => (isActive ? styles.activeLink : undefined)}>A Propos</NavLink>
           </li>
         </ul>
       </nav>
